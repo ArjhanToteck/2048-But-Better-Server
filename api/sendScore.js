@@ -1,5 +1,5 @@
 
-import startPocketbase, { pocketbase } from "/src/pages/api/pocketbase.js";
+import startPocketbase, { pocketbase } from "@/src/pages/api/pocketbase.js";
 
 export default async function sendScore(req, res) {
 	// get score
