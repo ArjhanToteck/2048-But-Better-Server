@@ -1,7 +1,7 @@
 
 import startPocketbase, { pocketbase } from "@/src/pages/api/pocketbase.js";
 
-export default async function checkScore(req, res) {
+export default async function handler(req, res) {
 	// wake up pocketbase
 	startPocketbase(null, null, false);
 

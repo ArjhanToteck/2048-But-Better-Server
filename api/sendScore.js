@@ -1,7 +1,7 @@
 
 import startPocketbase, { pocketbase } from "@/src/pages/api/pocketbase.js";
 
-export default async function sendScore(req, res) {
+export default async function handler(req, res) {
 	// get score
 	const score = req.body;
 
