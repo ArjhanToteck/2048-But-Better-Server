@@ -2,6 +2,9 @@
 import startPocketbase, { pocketbase } from "@/src/pages/api/pocketbase.js";
 
 export default async function handler(req, res) {
+	// CORS allow all to make this a public API
+	res.setHeader("Access-Control-Allow-Origin", "*");
+
 	// wake up pocketbase
 	startPocketbase(null, null, false);
 
